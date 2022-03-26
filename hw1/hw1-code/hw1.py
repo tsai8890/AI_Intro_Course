@@ -137,7 +137,7 @@ class Application:
         print("Results")
         print("Path Length:", len(path))
         print("States Explored:", statesExplored)
-        # print("Total time", total_time,"seconds")
+        print("Total time", total_time,"seconds")
         exit(0)
 
     # The game loop is where everything is drawn to the context. Only called when a human is playing

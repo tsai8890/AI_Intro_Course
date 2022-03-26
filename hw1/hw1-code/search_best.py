@@ -22,8 +22,8 @@ files and classes when code is run, so be careful to not modify anything else.
 """ The required data structures: priority queue """
 import heapq
 from re import L
-
 from numpy import dot
+
 class PriorityQueue:
     def  __init__(self):
         self.heap = []

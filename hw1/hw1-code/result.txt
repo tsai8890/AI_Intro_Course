@@ -1,0 +1,253 @@
+Part1 A Star
+
+maps/single/bigMaze.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 211
+States Explored: 539
+Total time 0.001964092254638672 seconds
+
+maps/single/mediumMaze.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 69
+States Explored: 220
+Total time 0.0008389949798583984 seconds
+
+maps/single/openMaze.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 55
+States Explored: 159
+Total time 0.0008687973022460938 seconds
+
+maps/single/smallMaze.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 20
+States Explored: 49
+Total time 0.00022220611572265625 seconds
+
+maps/single/tinyMaze.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 9
+States Explored: 8
+Total time 0.0001900196075439453 seconds
+
+Part1 BFS
+
+maps/single/bigMaze.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 211
+States Explored: 619
+Total time 0.0020029544830322266 seconds
+
+maps/single/mediumMaze.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 69
+States Explored: 269
+Total time 0.0013418197631835938 seconds
+
+maps/single/openMaze.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 55
+States Explored: 682
+Total time 0.003195047378540039 seconds
+
+maps/single/smallMaze.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 20
+States Explored: 92
+Total time 0.00032782554626464844 seconds
+
+maps/single/tinyMaze.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 9
+States Explored: 15
+Total time 7.390975952148438e-05 seconds
+
+Part2 A Star
+
+maps/corner/bigCorners.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 163
+States Explored: 1573
+Total time 0.0668480396270752 seconds
+
+maps/corner/mediumCorners.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 107
+States Explored: 724
+Total time 0.01601696014404297 seconds
+
+maps/corner/tinyCorners.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 29
+States Explored: 148
+Total time 0.002549886703491211 seconds
+
+Part2 BFS
+
+maps/corner/bigCorners.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 163
+States Explored: 7983
+Total time 0.03008413314819336 seconds
+
+maps/corner/mediumCorners.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 107
+States Explored: 1966
+Total time 0.012143135070800781 seconds
+
+maps/corner/tinyCorners.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 29
+States Explored: 252
+Total time 0.0009799003601074219 seconds
+
+Part3 A Star
+
+maps/multi/greedySearch.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 17
+States Explored: 34
+Total time 0.002128124237060547 seconds
+
+maps/multi/mediumDottedMaze.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 75
+States Explored: 347
+Total time 0.019954919815063477 seconds
+
+maps/multi/mediumSearch.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 169
+States Explored: 3348
+Total time 0.22684907913208008 seconds
+
+maps/multi/smallSearch.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 35
+States Explored: 107
+Total time 0.007253885269165039 seconds
+
+maps/multi/tinySearch.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 28
+States Explored: 82
+Total time 0.005568981170654297 seconds
+
+Part3 BFS
+
+maps/multi/greedySearch.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 17
+States Explored: 721
+Total time 0.0030546188354492188 seconds
+
+maps/multi/mediumDottedMaze.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 75
+States Explored: 3696
+Total time 0.02390289306640625 seconds
+
+maps/multi/mediumSearch.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 169
+States Explored: 1045568
+Total time 7.882521867752075 seconds
+
+maps/multi/smallSearch.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 35
+States Explored: 68690
+Total time 0.4213380813598633 seconds
+
+maps/multi/tinySearch.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 28
+States Explored: 5072
+Total time 0.026740074157714844 seconds
+
+Part4 A Star
+
+maps/multi/mediumSearch_prev.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 170
+States Explored: 227
+Total time 0.0021338462829589844 seconds
+
+maps/multi/bigSearch.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 356
+States Explored: 577
+Total time 0.006418943405151367 seconds
+
+maps/multi/oddSearch.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 64
+States Explored: 69
+Total time 0.0005240440368652344 seconds
+
+maps/multi/openSearch.txt:
+pygame 2.1.2 (SDL 2.0.18, Python 3.9.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Results
+Path Length: 99
+States Explored: 126
+Total time 0.001608133316040039 seconds

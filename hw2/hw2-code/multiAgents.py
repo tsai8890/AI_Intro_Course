@@ -130,30 +130,47 @@ class ReflexAgent(Agent):
         Print out these variables to see what you're getting, then combine them
         to create a masterful evaluation function.
         """
+
+        "*** YOUR CODE HERE ***"
         # Useful information you can extract from a GameState (pacman.py)
-        successorGameState = currentGameState.generatePacmanSuccessor(action)
-        startPos = currentGameState.getPacmanPosition()
+        oldPos = currentGameState.getPacmanPosition()
         oldGhostStates = currentGameState.getGhostStates()
 
+        successorGameState = currentGameState.generatePacmanSuccessor(action)
         newPos = successorGameState.getPacmanPosition()
         newFood = successorGameState.getFood()
         newGhostStates = successorGameState.getGhostStates()
+        newCapsules = successorGameState.getCapsules()
+        newFoodNum = len(newFood.asList())
 
-        newScaredTimes = [ghostState.scaredTimer for ghostState in newGhostStates]
-        
-        "*** YOUR CODE HERE ***"
-        if startPos == newPos:
+        # Make the pacman not to stop
+        if oldPos == newPos:
             return [-10000000]
 
-        food_num = len(newFood.asList())
-        food_dist = Prim_MST_heuristics(newPos, newFood.asList())
-        old_enemy_dist, _ = nearest_ghost(startPos, oldGhostStates)
+        def closer_food(curPos, newPos, foods):
+            count = 0
+            for food in foods:
+                if manhattanDistance(newPos, food) > manhattanDistance(curPos, food):
+                    count += 1
+            return count 
 
-        if old_enemy_dist < 4:
-            new_enemy_dist, _ = nearest_ghost(newPos, newGhostStates)
-            return [new_enemy_dist - old_enemy_dist]
+        newFood_CapsulesDist = Prim_MST_heuristics(newPos, newFood.asList() + newCapsules)
+        new_Capsules_dist = Prim_MST_heuristics(newPos, newCapsules) if len(newCapsules) != 0 else 0
+        closer_count = closer_food(oldPos, newPos, newFood.asList())
+        oldGhostDist, oldGhost = nearest_ghost(oldPos, oldGhostStates)
+
+        # There is a bug when 7->8, 8->9
+        if oldGhost.scaredTimer <= 7 and oldGhostDist <= 2:
+            newGhostDist, _ = nearest_ghost(newPos, newGhostStates)
+            return [newGhostDist - oldGhostDist]
+
+        elif oldGhost.scaredTimer >= 8 and oldGhostDist >= 2:
+            newGhostDist, _ = nearest_ghost(newPos, newGhostStates)
+            return [oldGhostDist - newGhostDist]
+
         else:
-            return [-food_num, -food_dist]
+            return [-newFoodNum, -new_Capsules_dist, -newFood_CapsulesDist, closer_count]
+
 
 def scoreEvaluationFunction(currentGameState: GameState):
     """
